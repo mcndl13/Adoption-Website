@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+	
+	
+	<head>
+		
+		<meta charset="utf-8">
+		
+		<title>Adopt A-Cat/Dog </title>
+		
+		<link rel="stylesheet" href="website.css">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+	</head>
+	
+	<body onload="timeNow ()">
+		
+		<script src="websitejavaScript.js"></script>
+		
+		
+		
+		<!-- Header -->
+		
+		<header>
+			<a href="website.html"> <h1 class="image"><img src="LogoMakr-3VYal3.png" alt="logo" class="image1"> </h1> </a>
+			
+			<h1>
+						<a  href="website.html" style="color: white"> <span style="font-weight: 10">GARDEN OF</span> <span>FRIENDS</span> </a>
+			</h1>
+			
+			<a href="website.html"> <h1 class="image"><img src="LogoMakr-3VYal3.png" alt="logo" class="image1"> </h1> </a>
+			
+			<span id="time"> </span>
+
+		</header>
+		
+		
+		<!-- body of website		-->
+		
+		
+		<div class="site">
+			
+			
+				
+				<div class="sidebar">
+					
+					<div class="fixed">
+						
+						<h3>Menu</h3>
+
+								<nav class="menubar">
+
+									<a href="website.html" class="menu-active-item">Home</a>
+									<a href="pets.html" class="menu-item"> Browse Available Pets</a>
+									<a href="animalForm.html" class="menu-item">Find a dog/cat</a>
+									<a href="#" class="menu-item">Dog Care</a>
+									<a href="#" class="menu-item">Cat Care</a>
+									<a href="petToGiveWay.html" class="menu-item">Have a Pet to Giveway?</a>
+									<a href="contatUS.html" class="menu-item">Contact Us</a>
+
+								</nav>
+					
+					</div>
+
+				</div>
+			
+			
+			
+			
+		<!-- Content -->
+			
+			
+		<div class="grid-petGiveway">
+			
+			<div class="dogform"> 
+				
+				
+				<table> 
+							<tr> 
+
+									<td><h1> PET TO GIVEAWAY </h1> </td>
+
+									<td>
+										
+										<a href="https://www.akc.org/expert-advice/training/teaching-dogs-cats-live-together/"> 
+											<img src="https://www.akc.org/wp-content/uploads/2015/06/Golden-Retriever-laying-down-playing-with-a-cat.jpeg" alt="Different sport equipments" width="300"> <br></a>
+
+									</td>
+
+							</tr>
+
+				</table> <br>
+
+
+				<form id="giveawayForm">
+					
+					<!-- Dog adoption part -->
+					<fieldset>
+
+						<legend>Giving away pet</legend>	<br>	
+
+						<label>Are you looking to giveway a cat or a dog? </label>  <br><br>
+
+							<input type="radio" id="cgive" name="cgive" class="catdogRadio"> Cat
+
+							<input type="radio" id="dgive" name="dgive" class="catdogRadio"> Dog <br><br>
+						
+						
+						<label> Breed of Cat or Dog? (specify if a mix breed) </label>
+						<input type="text" class="giveText"> <br><br>
+						
+						
+						<label>Age of the animal:</label>
+						<input type="number" style="width: 40px" class="giveText"> years old<br><br>
+						
+						<label> Animal gender: </label>
+						<input type="radio" id=mdog name="gender" class="petGender"> Male
+						<input type="radio" id=fdog name="gender" class="petGender"> Female <br>
+						
+						<br><label> Does it need to get along with other dogs?</label>  <br>
+
+								<input type="radio" id="dother" name="dother" class="otherDog"> Yes 
+								<input type="radio" id="dother" name="dother" class="otherDog"> No <br>
+						
+						<br><label> Does it need to get along with other cats?</label>  <br>
+
+								<input type="radio" id="lother" name="lother" class="otherCat"> Yes 
+								<input type="radio" id="nother" name="nother" class="otherCat"> No <br><br>
+						
+						<label> Is it suitable for family with small children?</label>  <br>
+
+								<input type="radio" id="lother" name="lother" class="smallChildren"> Yes 
+								<input type="radio" id="nother" name="nother" class="smallChildren"> No <br><br>
+						
+						<label> What makes this animal a good pet?</label> <br>
+						<textarea rows="5" cols="50" name="brag" form="giveawayForm" class="giveText"> Brag here...</textarea><br>
+				
+					</fieldset> <br>
+
+					<!-- Filling identity -->
+
+					<fieldset> 
+
+							<legend> Current owner's personal information</legend> <br>
+
+							<label for="fname"> First Name </label>
+
+							<input type="text" id="fname" name="fname" class="giveText"> <br><br>
+
+
+							<label for="Fname"> Family Name </label>
+
+							<input type="text" id="Fname" name="Fname" class="giveText"> <br><br>
+
+							<label for="email"> Email </label>
+
+							<input type="email" id="email" name="email" class="giveText"> <br><br>
+						
+			
+					</fieldset> <br>
+
+
+					
+
+					<p> Thank you for taking the time to fill out our survey!</p>
+
+					<input type= "submit" id="submit" name="submit" value="Submit" onclick="return giveAwayEmpty()">
+
+					<input type= "reset" id="reset" name="reset" value= "Reset">
+
+				</form>
+			
+			
+			
+				</div>
+			
+			</div>
+			
+			
+		</div>
+		
+
+		
+		<!-- Footer -->
+		
+		
+		<div class="footer">
+			
+			<div class="footer-grid1"> 
+				
+				<a href="#Privacy-DisclaimerStatement" onclick="privacyAlert()"><p style="color: white"> Privacy/Disclaimer Statement</p></a>
+
+			</div>
+		
+		
+		
+		</div>
+		
+			
+	
+	
+	</body>
+
+
+
+</html>
