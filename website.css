@@ -1,0 +1,373 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;
+	list-style: none;
+	text-decoration: none;
+
+	
+}	
+
+body{
+	background-image: linear-gradient(155deg, #0974f1, #9fccfa 90%);
+	background-attachment: fixed;
+	height: 100%;
+
+}
+
+
+/*Header*/
+.image1{
+	
+	width: 100px;
+	height: 90px;
+	margin-left: 67px;
+	
+}
+
+.image2{
+	width: 100px;
+	height: 90px;
+	margin-left: 105px;
+}
+
+header {
+	height: 12%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content:space-around;
+	align-items: center;
+	
+}
+
+#time{
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+}
+/*Header*/
+
+
+
+
+
+
+/*Side bar style*/
+
+
+.site{
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+}
+
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 10vw;
+}
+
+.fixed{
+	height: 100%;
+	width: 10vw;
+	position: fixed;
+}
+
+.sidebar h3 {
+	color: black;
+	text-transform: uppercase;
+	padding: 10px 0px;
+	
+}
+
+.menubar{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	
+}
+
+
+.sidebar .menubar .menu-item{
+	display: block;
+	padding: 35px 20px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.sidebar .menubar .menu-active-item{
+	display: block;
+	padding: 10px;
+	font-weight: bold;
+	background-color: black;
+	color: white;
+
+}
+
+
+
+.sidebar .menubar .menu-item:hover{
+	transition: all 0.5s ease;
+	background-color: #6e78ff;
+	color: black;	
+}
+
+
+
+/*Side bar style*/
+
+
+/*Main page Content style*/
+
+.text{
+	flex: 1;
+	padding: .75rem 3.75rem;
+	background-color: ;
+	height: 230px;
+	color: white;
+}
+
+.content {
+	display: flex;
+	width: 85vw;
+	flex-direction: column;
+}
+
+
+/*Main page Content style*/
+
+
+
+
+/*Browse Pets*/
+
+.browse{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	flex: 5.5;
+}
+
+/*Choosing dog*/
+.dog {
+	display: flex;
+	flex-direction: row;
+	height: 35vh;
+	align-items: center;
+	justify-content: space-between;
+	color: black;
+}
+
+.dogcontent{
+	background-color: #363434;
+	flex: 2;
+	height: 100%;
+	color: white;
+	font-size: 35px;
+	overflow:auto;
+	border: 8px solid white;
+	
+}
+
+.dogimage{
+	height: 35vh;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	background-image: url("https://www.southernliving.com/thmb/WHH7cdFT3YMJlJN4y7y3lsAKvJ8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/gettyimages-114166947-1-268128f97e5c415baede328c1fe32f55.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+
+/*Choosing cat*/
+.cat {
+	display: flex;
+	flex-direction: row-reverse;
+	height: 35vh;
+	color: white;
+	align-items: center;
+	justify-content: space-between;
+	border: solid 2px #363434;
+}
+
+.catcontent{
+	border: solid 2px #363434;
+	flex: 2;
+	height: 100%;
+	background-color: #363434;
+	height: 100%;
+	color: white;
+	font-size: 35px;
+	overflow:auto;
+	border: 8px solid white;
+}
+
+.catimage{
+	height: 35vh;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEbWFmeDCIjPtX400eTLubNetrzRMKbn89Ag&usqp=CAU");
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+
+/*Button style*/
+.button {
+  opacity: 0;
+  transition: opacity .35s ease;
+	position: relative;
+	left: 140px;
+	top: 110px;
+}
+
+.button a {
+  width: 200px;
+  padding: 12px 48px;
+  color: white;
+  border: solid 2px white;
+  z-index: 1;
+	font-weight: bold;
+}
+
+.catimage .button a{
+	color: black;
+	border: solid 2px black;
+}
+
+.dogimage:hover .button, .catimage:hover .button {
+  opacity: 1;
+}
+
+/*Browse Pets*/
+
+
+
+
+.grid-container{
+	
+	display: flex;
+	flex-direction: column;
+	padding: 10px 10px;
+	border: 3px solid white;
+	background-color: #363434;
+}
+
+
+.grid-item1{
+	display:flex;
+	flex-direction: row;
+	background-color: lightgray;
+}
+
+.grid-item2{
+	background-color: lightgray;
+	flex: 1;
+}
+
+.grid-item3{
+	background-color: lightgray;
+	flex: 2;
+}
+
+.grid-item4{
+	display: flex;
+	flex-direction: row-reverse;
+	background-color: lightgray;
+}
+
+.grid-item5{
+	background-color: lightgray;
+}
+
+.grid6{
+	background-image: url(https://media.newyorker.com/photos/606b51c2313f23423168acbe/master/w_2560%2Cc_limit/Brewer-CompanionDogApplication.jpg);
+	background-size:contain;
+	background-repeat: no-repeat;
+	flex: 1;
+}
+
+
+
+.footer{
+  
+   bottom: 0;
+   width: 100%;
+   background-color:black;
+   color: white;
+   text-align: center;
+	height: 50px;
+}
+
+
+.grid-container div p{
+	
+	font-size: 40px;
+	font-weight: bold;
+	
+	
+}
+
+.centered {
+	color: white;
+  position: absolute;
+  top: 20%;
+  left: 75%;
+	transform: translate(-50%, -50%);
+  
+}
+
+.centeredbrowse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-size: 100px;
+}
+
+
+
+.grid-dogform{
+	
+	display:flex;
+	flex: 1;
+	background-color: #eee;
+	padding: 0px 35px;
+}
+
+
+.grid-petGiveway, .contactUs{
+	
+	
+	display: flex;
+	flex: 1;
+	
+	background-color: #eee;
+	
+	grid-template-columns: 1170px ;
+	
+
+	
+	padding: 0px 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
